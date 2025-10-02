@@ -1,0 +1,237 @@
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #0b0f1a;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+/* Columna izquierda (perfil) */
+.profile {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.avatar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: #1d4ed8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.meta {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.bio {
+  margin-top: 16px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.pill-list {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #e5e7eb;
+}
+
+/* Contacto */
+.contact {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #e5e7eb;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.contact a:hover {
+  background: rgba(29, 155, 240, 0.15);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #f9fafb;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Columna derecha (contenido principal) */
+.main {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #f3f4f6;
+}
+
+/* Tarjetas */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 14px;
+  border-radius: 12px;
+}
+
+/* Juegos y artistas */
+.game-list, .artists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.game-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.game-thumb {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Habilidades */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #dbeafe;
+}
+
+/* Botones */
+.cta {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #1da1f2, #60a5fa);
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
